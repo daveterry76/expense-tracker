@@ -1,0 +1,17 @@
+.incomeSm {
+    display: block;
+}
+
+.incomeLg {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .incomeSm {
+        display: none;
+    }
+
+    .incomeLg {
+        display: block;
+    }
+}
