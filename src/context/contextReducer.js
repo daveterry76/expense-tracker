@@ -1,11 +1,11 @@
 import React from 'react';
 
 const contextReducer = (state, action) => {
-    let transactions = [];
+    let transactions;
 
  switch (action.type) {
     case 'DELETE_TRANSACTION':
-        transactions.filter((t) => t.id !== action.payload);
+        transactions = state.filter((t) => t.id !== action.payload);
 
         sessionStorage.setItem('transactions', JSON.stringify(transactions))
 
